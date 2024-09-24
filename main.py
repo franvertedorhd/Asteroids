@@ -10,6 +10,7 @@ Arcade Asteriods game created with PyGame Zero and PGHelper
 TO DO:
     - Splash screen
     - Play again?
+    - Center the game screen
 """
 
 import random
