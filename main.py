@@ -187,7 +187,7 @@ def update():
             powerups.remove(powerup)
 
 def draw():
-    global game_over_played
+    global game_over_played, powerup_time
     screen.fill((0, 0, 0))
     background.draw()
     health_bar.draw()
@@ -208,6 +208,7 @@ def draw():
         for laser in lasers:
             laser.draw()
     else:
+        powerup_time = -1
         powerups.clear()
         meteors.clear()
         explosions.clear()
